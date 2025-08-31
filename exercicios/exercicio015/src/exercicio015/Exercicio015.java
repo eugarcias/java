@@ -4,17 +4,21 @@
  */
 package exercicio015;
 
-/**
- *
- * @author Ericaa
- */
+//Solicitar nome e idade de uma pessoa.
+//Se a pessoa possuir idade entre 15 e 25 anos, imprimir o nome e a
+//mensagem: “ACEITA”.
+//Caso contrário, imprimir o nome e a mensagem: “NÃO ACEITA”.
+import javax.swing.JOptionPane;
 public class Exercicio015 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String nome ;    
+        nome = JOptionPane.showInputDialog("Digite seu nome:");
+        
+        int idade = Integer.parseInt(JOptionPane.showInputDialog("Qual a sua idade?"));
     }
     
 }
