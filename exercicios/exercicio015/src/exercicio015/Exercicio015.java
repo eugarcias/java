@@ -19,6 +19,9 @@ public class Exercicio015 {
         nome = JOptionPane.showInputDialog("Digite seu nome:");
         
         int idade = Integer.parseInt(JOptionPane.showInputDialog("Qual a sua idade?"));
+if ( idade >= 15 && idade <=25){
+    
+}
     }
     
 }
