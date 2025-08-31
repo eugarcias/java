@@ -9,19 +9,22 @@ package exercicio015;
 //mensagem: “ACEITA”.
 //Caso contrário, imprimir o nome e a mensagem: “NÃO ACEITA”.
 import javax.swing.JOptionPane;
+
 public class Exercicio015 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String nome ;    
+        String nome;
         nome = JOptionPane.showInputDialog("Digite seu nome:");
-        
+
         int idade = Integer.parseInt(JOptionPane.showInputDialog("Qual a sua idade?"));
-if ( idade >= 15 && idade <=25){
-    
-}
+        if (idade >= 15 && idade <= 25) {
+            JOptionPane.showMessageDialog(null, "Nome:" + nome + "\nStatus: ACEITA");
+        } else {
+            JOptionPane.showMessageDialog(null, "Nome:" + nome + "\nStatus: NÃO ACEITA");
+        }
     }
-    
+
 }
