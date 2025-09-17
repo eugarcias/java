@@ -9,19 +9,19 @@ public class Aluno {
     
     private int matricula;
     private String nome;
-    private String descricaosaude;
-    private float altura;
-    private double peso;
+    private int idade;
+    private boolean mensalidade;
     
+
     public Aluno (){
         
     }
-    public Aluno (int matricula, String nome, String descricaosaude, float altura, double peso){
+    public Aluno (int matricula, String nome, int idade, boolean mensalidade){
         this.matricula = matricula;
         this.nome = nome;
-        this.descricaosaude = descricaosaude;
-        this.altura = altura;
-        this.peso = peso;
+        this.idade = idade;
+        this.mensalidade = mensalidade;
+        
     }
 
     public int getMatricula() {
@@ -40,27 +40,24 @@ public class Aluno {
         this.nome = nome;
     }
 
-    public String getDescricaosaude() {
-        return descricaosaude;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setDescricaosaude(String descricaosaude) {
-        this.descricaosaude = descricaosaude;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
-    public float getAltura() {
-        return altura;
+    public boolean isMensalidade() {
+        return mensalidade;
     }
 
-    public void setAltura(float altura) {
-        this.altura = altura;
+    public void setMensalidade(boolean mensalidade) {
+        this.mensalidade = mensalidade;
     }
 
-    public double getPeso() {
-        return peso;
-    }
-
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
+    
 }
+    
+
+    

@@ -25,10 +25,28 @@ demonstre o uso dos construtores e métodos de acesso;
  */
     public static void main(String[] args) {
         
-       String nomeAluno = JOptionPane.showInputDialog("Digite o nome do aluno:");
-       String matriculaAluno = JOptionPane.showInputDialog("Digite o número da Matricula");
+       String nome = JOptionPane.showInputDialog("Qual nome do aluno?");
+       int matricula = Integer.parseInt(JOptionPane.showInputDialog("Qual a matricula do aluno? "));
+       int idade = Integer.parseInt(JOptionPane.showInputDialog("Qual a idade?"));
+       boolean mensalidade = JOptionPane.showConfirmDialog(null,"Mensalidade está em dia?", "Mensalidade", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION;
        
+       Aluno aluno1 = new Aluno(matricula, nome, idade, mensalidade);
        
+       String mensagem = "Aluno criado com sucesso\n" +
+               "Nome: " + aluno1.getNome() + "\n" +
+               "Matricula: " + aluno1.getMatricula() + "\n" +
+               "Idade: " + aluno1.getIdade() + "\n" +
+               "Mensalidade em dia? " + (aluno1.isMensalidade() ? "Sim" : "Não");
+       
+       JOptionPane.showMessageDialog(null, mensagem);
+       
+       aluno1.setMensalidade(false);
+       
+       String novaMensagem = "O Status da mensalidade foi alterado!\n" +
+               "A mensalidade de " + aluno1.getNome() + " está agora: " + (aluno1.isMensalidade()? "Em dia" : "Atrasada");
+        
+       JOptionPane.showMessageDialog(null, novaMensagem);
+               
         
     }
     
