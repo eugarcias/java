@@ -3,6 +3,7 @@ package exercicio027;
 
 
 import Model.Aluno;
+import Model.Funcionario;
 import javax.swing.JOptionPane;
 
 public class Exercicio027 {
@@ -32,13 +33,13 @@ demonstre o uso dos construtores e métodos de acesso;
        
        Aluno aluno1 = new Aluno(matricula, nome, idade, mensalidade);
        
-       String mensagem = "Aluno criado com sucesso\n" +
+       String mensagemAluno = "Aluno criado com sucesso\n" +
                "Nome: " + aluno1.getNome() + "\n" +
                "Matricula: " + aluno1.getMatricula() + "\n" +
                "Idade: " + aluno1.getIdade() + "\n" +
                "Mensalidade em dia? " + (aluno1.isMensalidade() ? "Sim" : "Não");
        
-       JOptionPane.showMessageDialog(null, mensagem);
+       JOptionPane.showMessageDialog(null, mensagemAluno);
        
        aluno1.setMensalidade(false);
        
@@ -47,7 +48,26 @@ demonstre o uso dos construtores e métodos de acesso;
         
        JOptionPane.showMessageDialog(null, novaMensagem);
                
-        
+       int id = Integer.parseInt(JOptionPane.showInputDialog("Digite seu ID de Funcionário: "));
+       String nomeFuncionario = JOptionPane.showInputDialog("Qual seu nome? ");
+       int idadeFuncionario = Integer.parseInt(JOptionPane.showInputDialog("Qual sua idade? "));
+       String cargo = JOptionPane.showInputDialog("Qual seu cargo? ");
+       double salario = Double.parseDouble(JOptionPane.showInputDialog("Qual seu salario?"));
+       
+       Funcionario funcionario1 = new Funcionario(id, nomeFuncionario, idadeFuncionario, cargo, salario);
+       
+       
+       String mensagemFuncionario = "Funcionario criado com sucesso!\n" +
+               "Id: " + funcionario1.getId() + "\n" +
+               "Nome: " + funcionario1.getNome() + "\n" +
+               "Idade: " + funcionario1.getIdade() + "\n" +
+               "Cargo: " + funcionario1.getCargo() + "\n" +
+               "Salario:  " + funcionario1.getSalario(); 
+       
+       JOptionPane.showMessageDialog(null, mensagemFuncionario);
+               
+               
+       
     }
     
 }
