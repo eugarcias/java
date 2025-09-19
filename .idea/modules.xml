@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio0005/src/Aluno.java/Aluno.java.iml" filepath="$PROJECT_DIR$/exercicios/exercicio0005/src/Aluno.java/Aluno.java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafios/desafios.iml" filepath="$PROJECT_DIR$/desafios/desafios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio0001/exercicio0001.iml" filepath="$PROJECT_DIR$/exercicios/exercicio0001/exercicio0001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio0002/exercicio0002.iml" filepath="$PROJECT_DIR$/exercicios/exercicio0002/exercicio0002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio0003/exercicio0003.iml" filepath="$PROJECT_DIR$/exercicios/exercicio0003/exercicio0003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio0004/exercicio0004.iml" filepath="$PROJECT_DIR$/exercicios/exercicio0004/exercicio0004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio0005/src/exercicio0005.iml" filepath="$PROJECT_DIR$/exercicios/exercicio0005/src/exercicio0005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio010/exercicio010.iml" filepath="$PROJECT_DIR$/exercicios/exercicio010/exercicio010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio011/exercicio011.iml" filepath="$PROJECT_DIR$/exercicios/exercicio011/exercicio011.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio012/exercicio012.iml" filepath="$PROJECT_DIR$/exercicios/exercicio012/exercicio012.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio013/exercicio013.iml" filepath="$PROJECT_DIR$/exercicios/exercicio013/exercicio013.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio014/exercicio014.iml" filepath="$PROJECT_DIR$/exercicios/exercicio014/exercicio014.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio015/exercicio015.iml" filepath="$PROJECT_DIR$/exercicios/exercicio015/exercicio015.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio016/exercicio016.iml" filepath="$PROJECT_DIR$/exercicios/exercicio016/exercicio016.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio017/exercicio017.iml" filepath="$PROJECT_DIR$/exercicios/exercicio017/exercicio017.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio018/exercicio018.iml" filepath="$PROJECT_DIR$/exercicios/exercicio018/exercicio018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios/exercicio027/exercicio027.iml" filepath="$PROJECT_DIR$/exercicios/exercicio027/exercicio027.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
+    </modules>
+  </component>
+</project>

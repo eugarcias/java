@@ -27,15 +27,15 @@ demonstre o uso dos construtores e métodos de acesso;
     public static void main(String[] args) {
         
        String nome = JOptionPane.showInputDialog("Qual nome do aluno?");
-       int matricula = Integer.parseInt(JOptionPane.showInputDialog("Qual a matricula do aluno? "));
+       int id = Integer.parseInt(JOptionPane.showInputDialog("Qual o ID do aluno? "));
        int idade = Integer.parseInt(JOptionPane.showInputDialog("Qual a idade?"));
        boolean mensalidade = JOptionPane.showConfirmDialog(null,"Mensalidade está em dia?", "Mensalidade", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION;
        
-       Aluno aluno1 = new Aluno(matricula, nome, idade, mensalidade);
+       Aluno aluno1 = new Aluno(id, nome, idade, mensalidade);
        
        String mensagemAluno = "Aluno criado com sucesso\n" +
                "Nome: " + aluno1.getNome() + "\n" +
-               "Matricula: " + aluno1.getMatricula() + "\n" +
+               "ID: " + aluno1.getId() + "\n" +
                "Idade: " + aluno1.getIdade() + "\n" +
                "Mensalidade em dia? " + (aluno1.isMensalidade() ? "Sim" : "Não");
        

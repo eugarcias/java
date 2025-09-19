@@ -3,11 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Model;
+import Model.Pessoa;
 
 
-public class Aluno {
+public class Aluno extends Pessoa {
     
-    private int matricula;
+    private int id;
     private String nome;
     private int idade;
     private boolean mensalidade;
@@ -16,20 +17,20 @@ public class Aluno {
     public Aluno (){
         
     }
-    public Aluno (int matricula, String nome, int idade, boolean mensalidade){
-        this.matricula = matricula;
+    public Aluno (int id, String nome, int idade, boolean mensalidade){
+        this.id = id;
         this.nome = nome;
         this.idade = idade;
         this.mensalidade = mensalidade;
         
     }
 
-    public int getMatricula() {
-        return matricula;
+    public int getId() {
+        return id;
     }
 
-    public void setMatricula(int matricula) {
-        this.matricula = matricula;
+    public void setId(int matricula) {
+        this.id = id;
     }
 
     public String getNome() {
