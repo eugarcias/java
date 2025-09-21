@@ -29,9 +29,6 @@ public class Aluno extends Pessoa {
         return id;
     }
 
-    public void setId(int matricula) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
