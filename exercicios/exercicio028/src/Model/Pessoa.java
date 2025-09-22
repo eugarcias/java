@@ -1,5 +1,6 @@
 package Model;
 
+
 public class Pessoa {
 
     private int id;
@@ -8,16 +9,16 @@ public class Pessoa {
 
 
 
-public Pessoa (){
-}
+    public Pessoa (){
+    }
 
 
 
     public Pessoa (int id, String nome, int idade){
-    this.id = id;
-    this.nome = nome;
-    this.idade = idade;
-}
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+    }
 
     public int getId() {
         return id;
