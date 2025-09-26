@@ -11,26 +11,25 @@ public class Main {
 //    Para notas fora desse intervalo, exiba "Nota inválida."
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Qual nota você dá para nossa empresa? ");
-        String entrada = scanner.next();
+        System.out.print("Qual nota você dá para nossa empresa? ");
 
-        int nota = 1;
+        int escolha = scanner.nextInt();
 
-        switch (nota){
+        switch (escolha){
             case 1:
-                System.out.println("Nota 5: Excelente");
+                System.out.println("Nota 1: Insuficiente");
                 break;
             case 2:
-                System.out.println("Nota 4: Muito bom");
+                System.out.println("Nota 2: Regular");
                 break;
             case 3:
                 System.out.println("Nota 3: Bom");
                 break;
             case 4:
-                System.out.println("Nota 2: Regular");
+                System.out.println("Nota 4: Muito bom");
                 break;
             case 5:
-                System.out.println("Nota 1: Insuficiente");
+                System.out.println("Nota 5: Excelente");
                 break;
             default:
                 System.out.println("Opção Inválida, insira um número para prosseguir!");
