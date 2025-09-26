@@ -20,7 +20,6 @@ public class Main {
         String entrada = scanner.next();
 
         char letra = entrada.toLowerCase().charAt(0);
-        char consoante = 'z';
 
         switch (letra){
             case 'a':
@@ -28,13 +27,19 @@ public class Main {
             case 'i':
             case 'o':
             case 'u':
-                System.out.println("A letra " +letra + "é uma vogal");
+                System.out.println("A letra " +letra + " aé uma vogal");
                 break;
 
+            default:
 
+            if (letra >= 'a' && letra <= 'z') {
+                System.out.println("A letra " + letra + "é uma consoante.");
+            } else {
+                System.out.println("Entrada inválida, por favor digite apenas uma única letra");
+            }
+            break;
         }
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
+         scanner.close();
 
     }
 }
