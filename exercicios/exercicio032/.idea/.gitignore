@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Arquivos compilados do Java
+*.class
+out/
+build/
+
+# Arquivos do IntelliJ IDEA
+.idea/
+*.iml
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
