@@ -32,6 +32,6 @@ public class Funcionario extends Pessoa {
         return "--- Dados do Funcionário ---\n" +
                 super.toString() +
                 "\nCargo: " + cargo +
-                "\nSalário: " +  String.format("%,2f", salario);
+                "\nSalário: " +  String.format("%.2f", salario);
     }
 }
