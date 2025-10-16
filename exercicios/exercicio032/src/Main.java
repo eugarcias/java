@@ -1,6 +1,6 @@
 
 import View.AppView;
-import Control.Control;
+import Controller.Control;
 
 
 public class Main {

@@ -1,10 +1,8 @@
-package Control;
+package Controller;
 
 
 import javax.swing.JOptionPane;
 import Model.Aluno;
-import Model.Pessoa;
-import Model.Professor;
 
 public class Control {
 

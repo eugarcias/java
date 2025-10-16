@@ -1,14 +1,9 @@
-package Control;
+package Controller;
 
 import Model.Aluno;
 import Model.Funcionario;
 
-import javax.swing.*;
 
-
-
-import Model.Aluno;
-import Model.Funcionario;
 import javax.swing.JOptionPane;
 
 public class Control {
