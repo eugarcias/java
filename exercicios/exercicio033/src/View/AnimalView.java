@@ -5,7 +5,7 @@ import Model.Cachorro;
 import Model.Galinha;
 import Model.Gato;
 import javax.swing.JOptionPane;
-import java.util.List; // Usaremos List aqui para facilitar a passagem de dados
+import java.util.List;
 
 public class AnimalView {
 
