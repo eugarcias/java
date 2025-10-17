@@ -10,5 +10,12 @@ public class Main {
 
         System.out.println(nome + idade);
 
+        // 2 - atribuiçao de variavel com oiutra
+
+        String teste = "teste";
+        String testando = teste;
+
+        System.out.println(testando);
+
     }
 }
