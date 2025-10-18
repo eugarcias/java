@@ -9,5 +9,16 @@ public class Main {
 
         System.out.println(soma);
 
+        char letra = 'A';
+
+        System.out.println((int) letra);
+
+        double priValor = 10.75;
+        double segValor = 20.75;
+
+        double soma2 = (priValor + segValor);
+
+        System.out.println(soma2);
+
     }
 }
