@@ -62,6 +62,8 @@ public class Main {
 
         int x = 5;
 
+        // lopps -  for, while
+
         x++;
         x++;
 
@@ -73,6 +75,35 @@ public class Main {
         y--;
 
         System.out.println(y);
+
+        int a = 10;
+
+        a -= 5;
+
+        System.out.println(a);
+
+        int b = 5;
+
+        b += 10;
+
+        System.out.println(b);
+
+        //type casting
+
+        int numero = 10;
+
+        double numeroDouble = numero;
+
+        System.out.println(numeroDouble);
+
+        // explicito (narrowing)
+
+        double numDouble = 9.53;
+        int valorInt = (int )numDouble;
+        System.out.println(valorInt);
+
+        // casting de char para int
+
 
     }
 }
