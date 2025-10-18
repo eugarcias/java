@@ -17,5 +17,23 @@ public class Main {
 
         System.out.println(testando);
 
+        String firstName = "Erica";
+        String lastName = "Ama o Maurício SZ ";
+
+        System.out.println(firstName);
+        System.out.println(lastName);
+
+        String fullName = (firstName + " " + lastName);
+
+        char letra = 'a';
+
+        System.out.println(letra);
+
+
+        // long
+
+        long populacaoMundial = 123_321_456_456L;
+        System.out.println(populacaoMundial + 5);
+
     }
 }
