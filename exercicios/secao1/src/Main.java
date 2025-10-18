@@ -40,5 +40,39 @@ public class Main {
        double precoCarne = 21.33d;
         System.out.println(precoCarne);
 
+        // Operadores Aritméticos
+
+        int numero1 = 1;
+        int numero2 = 5;
+        int num3 = 10;
+        int num4 = 20;
+
+        System.out.println(numero1 + numero2 + numero2);
+        int soma = numero1 + numero2;
+
+        System.out.println(soma);
+
+        System.out.println(num4 / numero2);
+
+        System.out.println( 1223 % 100);
+
+        // operadores aritmeticos p2
+
+        //incrementoo
+
+        int x = 5;
+
+        x++;
+        x++;
+
+        // decremento
+        System.out.println(x);
+
+        int y = 10;
+        y--;
+        y--;
+
+        System.out.println(y);
+
     }
 }
