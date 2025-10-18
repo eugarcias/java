@@ -35,5 +35,10 @@ public class Main {
         long populacaoMundial = 123_321_456_456L;
         System.out.println(populacaoMundial + 5);
 
+       // double
+
+       double precoCarne = 21.33d;
+        System.out.println(precoCarne);
+
     }
 }
