@@ -114,5 +114,9 @@ public class Main {
         var M = 10;
         System.out.println(M);
 
+        // Classe Scanner
+
+
+
     }
 }
