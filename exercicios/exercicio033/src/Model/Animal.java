@@ -1,6 +1,6 @@
 package Model;
 
-public abstract class Animal {
+public abstract class  Animal {
     private static int proximoId = 1;
     private int id;
     private String nome;

@@ -19,7 +19,7 @@ public class TestScanner {
         System.out.println("Qual sua idade?");
         int idade = scanner.nextInt();
         System.out.println("Minha idade é " + idade + "!");
-        
+
         scanner.close();
     }
 }
