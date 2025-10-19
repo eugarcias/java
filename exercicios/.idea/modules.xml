@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/exercicio0005/src/Aluno.java/Aluno.java.iml" filepath="$PROJECT_DIR$/exercicio0005/src/Aluno.java/Aluno.java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/secao1/Desafios/Desafio001/Desafio001.iml" filepath="$PROJECT_DIR$/secao1/Desafios/Desafio001/Desafio001.iml" />
-      <module fileurl="file://$PROJECT_DIR$/secao1/Variaveis/Variaveis.iml" filepath="$PROJECT_DIR$/secao1/Variaveis/Variaveis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estudos-horadecodar/Desafios/Desafio001/Desafio001.iml" filepath="$PROJECT_DIR$/estudos-horadecodar/Desafios/Desafio001/Desafio001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estudos-horadecodar/Variaveis/Variaveis.iml" filepath="$PROJECT_DIR$/estudos-horadecodar/Variaveis/Variaveis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/estudos-horadecodar/estudos-horadecodar.iml" filepath="$PROJECT_DIR$/estudos-horadecodar/estudos-horadecodar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/estudos-java.iml" filepath="$PROJECT_DIR$/.idea/estudos-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio0001/exercicio0001.iml" filepath="$PROJECT_DIR$/exercicio0001/exercicio0001.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio0002/exercicio0002.iml" filepath="$PROJECT_DIR$/exercicio0002/exercicio0002.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio0003/exercicio0003.iml" filepath="$PROJECT_DIR$/exercicio0003/exercicio0003.iml" />
@@ -26,8 +28,6 @@
       <module fileurl="file://$PROJECT_DIR$/exercicio031/exercicio031.iml" filepath="$PROJECT_DIR$/exercicio031/exercicio031.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio032/exercicio032.iml" filepath="$PROJECT_DIR$/exercicio032/exercicio032.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicio033/exercicio033.iml" filepath="$PROJECT_DIR$/exercicio033/exercicio033.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/exercicios.iml" filepath="$PROJECT_DIR$/.idea/exercicios.iml" />
-      <module fileurl="file://$PROJECT_DIR$/secao1/secao1.iml" filepath="$PROJECT_DIR$/secao1/secao1.iml" />
     </modules>
   </component>
 </project>
