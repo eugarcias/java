@@ -20,5 +20,14 @@ public class Main {
 
         System.out.println(soma2);
 
+        long valorBilion = 2_000_000_000L;
+
+        int valorInteiro = (int )valorBilion;
+        System.out.println (valorInteiro);
+
+        String apresentacao = "Olá, Mundo!";
+        String msg = apresentacao +  "Bem-Vindo ao Java";
+        System.out.println(msg);
+
     }
 }
