@@ -104,6 +104,15 @@ public class Main {
 
         // casting de char para int
 
+        // constantes com final
+
+        final int dias_da_semana = 7;
+        System.out.println("Dias da Semana " + dias_da_semana);
+
+       // inferencia do tipo Var
+
+        var M = 10;
+        System.out.println(M);
 
     }
 }
