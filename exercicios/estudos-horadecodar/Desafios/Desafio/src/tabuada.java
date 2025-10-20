@@ -9,6 +9,7 @@ public class tabuada {
 
         int num1 = scanner.nextInt();
 
+
         System.out.println("--Tabuada---\n" +
                 "1 - Adição\n" +
                 "2 - Subtração\n" +
@@ -24,22 +25,22 @@ public class tabuada {
 
         switch (operacao) {
             case 1:
-                System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
+                System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
                 break;
 
             case 2:
-                System.out.println(num1 + "-" + num2 + "=" + (num1 - num2));
+                System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
                 break;
 
             case 3:
-                System.out.println(num1 + "*" + num2 + "=" + (num1 * num2));
+                System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
                 break;
 
             case 4:
                 if (num2 == 0) {
                     System.out.println("Erro: não é possivel dividir por zero");
                 } else {
-                    System.out.println(num1 + "/" + num2 + "=" + ((double) num1 / num2));
+                    System.out.println(num1 + " / " + num2 + " = 200" + ((double) num1 / num2));
                 }
                 break;
 
