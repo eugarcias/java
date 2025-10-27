@@ -21,5 +21,21 @@ public class Main {
         System.out.println(x < 10);
         System.out.println(x > 5);
 
+        // Atribuição X Comparação
+
+        int n = 5; // Atribuição
+        int m = 10;
+
+        System.out.println(n == 12); // Comparação
+
+        // Comparação de Strings
+
+        String str = "Java";
+        String str1 = new String("Java");
+
+        System.out.println(str == str1);
+        System.out.println(str == "Java");
+        System.out.println(str.equals(str1));
+        System.out.println(str.equalsIgnoreCase(str1));
     }
 }
