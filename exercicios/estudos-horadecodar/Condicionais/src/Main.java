@@ -37,5 +37,38 @@ public class Main {
         System.out.println(str == "Java");
         System.out.println(str.equals(str1));
         System.out.println(str.equalsIgnoreCase(str1));
+
+        // Estrutura de Condição
+
+        int numero = 10;
+        if (numero > 100) {
+            System.out.println("Número é maior que 5!");
+        } else {
+            System.out.println("O número não é maior que 100!");
+
+        }
+        String texto = "texto";
+        if (texto.equalsIgnoreCase("Texto")) {
+            System.out.println("O Texto é texto!");
+        }
+
+
+    double nota = 10;
+
+    if (nota == 10){
+    System.out.println("Você tirou a nota máxima");
     }
+    else if (nota >=9) {
+        System.out.println("Nota muito boa!");
+    } else if (nota >= 7){
+        System.out.println("Nota média!");
+    } else {
+        System.out.println("Nota abaixo da média!");
+    }
+
+    // Operadores Lógicos
+        // && (And) Retorna True se ambas condiçoes forem verdadeiras
+        // || Retorna true se pelo menos uma condição for verdadeira
+        // ! Inverto valor lógico, retornma true se a condição for false e vice-versa
+  }
 }
