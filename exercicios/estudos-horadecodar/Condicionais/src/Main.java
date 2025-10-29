@@ -70,5 +70,9 @@ public class Main {
         // && (And) Retorna True se ambas condiçoes forem verdadeiras
         // || Retorna true se pelo menos uma condição for verdadeira
         // ! Inverto valor lógico, retornma true se a condição for false e vice-versa
+
+
+
+
   }
 }
