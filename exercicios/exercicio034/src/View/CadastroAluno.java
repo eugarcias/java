@@ -4,6 +4,8 @@
  */
 package View;
 
+import Model.Aluno;
+
 /**
  *
  * @author Mauricio
@@ -18,6 +20,14 @@ public class CadastroAluno extends javax.swing.JFrame {
     public CadastroAluno() {
         initComponents();
     }
+    
+    private Aluno objetoaluno;
+    
+    public CadastroAluno(){
+        initComponents();
+        thj
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
