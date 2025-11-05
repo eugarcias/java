@@ -28,7 +28,32 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        Arquivo = new javax.swing.JMenu();
+        c_alunos = new javax.swing.JMenuItem();
+        g_alunos = new javax.swing.JMenuItem();
+        sair = new javax.swing.JMenuItem();
+        Sobre = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Arquivo.setText("Arquivo");
+
+        c_alunos.setText("Cadastrar Alunos");
+        Arquivo.add(c_alunos);
+
+        g_alunos.setText("Gerenciar Alunos");
+        Arquivo.add(g_alunos);
+
+        sair.setText("Sair");
+        Arquivo.add(sair);
+
+        jMenuBar1.add(Arquivo);
+
+        Sobre.setText("Sobre");
+        jMenuBar1.add(Sobre);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -38,7 +63,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 277, Short.MAX_VALUE)
         );
 
         pack();
@@ -70,5 +95,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Arquivo;
+    private javax.swing.JMenu Sobre;
+    private javax.swing.JMenuItem c_alunos;
+    private javax.swing.JMenuItem g_alunos;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem sair;
     // End of variables declaration//GEN-END:variables
 }
