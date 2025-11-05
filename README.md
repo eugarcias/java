@@ -40,15 +40,6 @@ Polimorfismo: Capacidade de um objeto se comportar de diferentes formas.
 Exercícios e Projetos Concluídos
 CalculadoraSimples: Uma calculadora que realiza as 4 operações básicas. (no diretório basico/)
 
-SistemaAcademia: Projeto que aplica POO para gerenciar Alunos e Professores. (no diretório projetos/)
-
-JogoDaVelha: Jogo simples que utiliza arrays e lógica de jogo. (no diretório projetos/)
 
 
 
-Como Usar este Repositório
-Você pode clonar este repositório para o seu computador e acompanhar a evolução do meu código. Sinta-se à vontade para explorar os exemplos, sugerir melhorias ou até mesmo propor novos exercícios.
-
-git clone https://github.com/SeuUsuario/NomeDoRepositorio.git
-
-Este README é um bom ponto de partida para manter seus estudos organizados. À medida que você avança, você pode adicionar novas seções ou detalhes sobre os projetos mais complexos.
