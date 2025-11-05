@@ -24,10 +24,9 @@ public class CadastroAluno extends javax.swing.JFrame {
     public CadastroAluno() {
         initComponents();
         this.objaluno = new Aluno();
-        this.controlador = new ControleAluno();
+        this.controlador = new 
     }
     
-    Aluno novoAluno = new Aluno (nome, idade, curso, fase);
 
     
 
