@@ -8,6 +8,9 @@ package View;
  *
  * @author Mauricio
  */
-public class Mensagens {
+public class Mensagens extends Exception {
+    Mensagens(String msg){
+        super(msg);
+    }
     
 }

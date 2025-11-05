@@ -4,6 +4,8 @@
  */
 package View;
 
+import Model.Aluno;
+
 /**
  *
  * @author Mauricio
@@ -11,12 +13,16 @@ package View;
 public class GerenciarAluno extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(GerenciarAluno.class.getName());
+    
+    private Aluno objaluno;
+   
 
     /**
      * Creates new form GerenciarAluno
      */
     public GerenciarAluno() {
         initComponents();
+        this.objaluno = new Aluno();
     }
 
     /**
