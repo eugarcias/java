@@ -40,6 +40,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         Arquivo.setText("Arquivo");
 
         c_alunos.setText("Cadastrar Alunos");
+        c_alunos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                c_alunosActionPerformed(evt);
+            }
+        });
         Arquivo.add(c_alunos);
 
         g_alunos.setText("Gerenciar Alunos");
@@ -68,6 +73,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void c_alunosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_alunosActionPerformed
+       
+        CadastroAluno objeto = new CadastroAluno();
+        objeto.setVisible(true);
+    }//GEN-LAST:event_c_alunosActionPerformed
 
     /**
      * @param args the command line arguments
