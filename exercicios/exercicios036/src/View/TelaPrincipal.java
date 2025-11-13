@@ -26,85 +26,76 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        tela_nome = new javax.swing.JLabel();
-        tela_idade = new javax.swing.JLabel();
-        tela_curso = new javax.swing.JLabel();
-        tela_fase = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        tl_arquivo = new javax.swing.JMenu();
+        tl_cadastrar = new javax.swing.JMenuItem();
+        tl_gerenciar = new javax.swing.JMenuItem();
+        tl_sair = new javax.swing.JMenuItem();
+        tl_sobre = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        tela_nome.setText("Nome:");
+        tl_arquivo.setText("Arquivo");
 
-        tela_idade.setText("Idade:");
+        tl_cadastrar.setText("Cadastrar Alunos");
+        tl_cadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tl_cadastrarActionPerformed(evt);
+            }
+        });
+        tl_arquivo.add(tl_cadastrar);
 
-        tela_curso.setText("Curso:");
+        tl_gerenciar.setText("Gerenciar Alunos");
+        tl_gerenciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tl_gerenciarActionPerformed(evt);
+            }
+        });
+        tl_arquivo.add(tl_gerenciar);
 
-        tela_fase.setText("Fase:");
+        tl_sair.setText("Sair");
+        tl_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tl_sairActionPerformed(evt);
+            }
+        });
+        tl_arquivo.add(tl_sair);
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jMenuBar1.add(tl_arquivo);
 
-        jScrollPane2.setViewportView(jTextPane2);
+        tl_sobre.setText("Sobre");
+        jMenuBar1.add(tl_sobre);
 
-        jScrollPane3.setViewportView(jTextPane3);
-
-        jScrollPane4.setViewportView(jTextPane4);
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(tela_fase, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(tela_curso, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(tela_idade, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(tela_nome, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(125, Short.MAX_VALUE))
+            .addGap(0, 696, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(tela_nome)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(tela_idade)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32)
-                        .addComponent(tela_curso, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tela_fase, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(88, Short.MAX_VALUE))
+            .addGap(0, 277, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tl_cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tl_cadastrarActionPerformed
+        
+        CadastroAluno objeto = new CadastroAluno();
+        objeto.setVisible(true);
+    }//GEN-LAST:event_tl_cadastrarActionPerformed
+
+    private void tl_gerenciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tl_gerenciarActionPerformed
+        GerenciarAluno objeto = new GerenciarAluno();
+        objeto.setVisible(true);
+    }//GEN-LAST:event_tl_gerenciarActionPerformed
+
+    private void tl_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tl_sairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_tl_sairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -142,17 +133,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JLabel tela_curso;
-    private javax.swing.JLabel tela_fase;
-    private javax.swing.JLabel tela_idade;
-    private javax.swing.JLabel tela_nome;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu tl_arquivo;
+    private javax.swing.JMenuItem tl_cadastrar;
+    private javax.swing.JMenuItem tl_gerenciar;
+    private javax.swing.JMenuItem tl_sair;
+    private javax.swing.JMenu tl_sobre;
     // End of variables declaration//GEN-END:variables
 }
