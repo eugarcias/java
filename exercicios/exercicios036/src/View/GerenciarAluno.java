@@ -4,17 +4,18 @@
  */
 package View;
 
+import Model.Aluno;
+
 /**
  *
  * @author conta
  */
 public class GerenciarAluno extends javax.swing.JFrame {
 
-    /**
-     * Creates new form GerenciarAluno
-     */
+    private Aluno objaluno;
     public GerenciarAluno() {
         initComponents();
+        this.objaluno = new Aluno();
     }
 
     /**

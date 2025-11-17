@@ -4,17 +4,19 @@
  */
 package View;
 
+import Model.Aluno;
+
 /**
  *
  * @author conta
  */
 public class CadastroAluno extends javax.swing.JFrame {
 
-    /**
-     * Creates new form CadastroAluno
-     */
+    private final Aluno objaluno;
+    
     public CadastroAluno() {
         initComponents();
+        this.objaluno = new Aluno();
     }
 
     /**
@@ -31,7 +33,7 @@ public class CadastroAluno extends javax.swing.JFrame {
         c_curso = new javax.swing.JLabel();
         c_fase = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        textpane_nome = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -51,7 +53,7 @@ public class CadastroAluno extends javax.swing.JFrame {
 
         c_fase.setText("Fase:");
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(textpane_nome);
 
         jScrollPane2.setViewportView(jTextPane2);
 
@@ -140,7 +142,33 @@ public class CadastroAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_c_cancelarActionPerformed
 
     private void c_cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_cadastrarActionPerformed
-        // TODO add your handling code here:
+        // Ativar o botão Cadastrar
+        
+        try {
+            String nome = "";
+            int idade = 0;
+            String curso = "";
+            int fase = 0;
+            
+            if (this.c_nome.getText().length()< 2){
+                throw new Mensagens("Nome deve conter ao menos 2 caracteres"); 
+            } else {
+                nome = this.c_nome.getText();
+            }
+            if (this.c_idade.getText().length()<=0){
+                throw new Mensagens ("Idade deve ser número e maior que zero.");
+            } else {
+                idade = Integer.parseInt(this.c_idade.getText());
+            }
+            
+            if (this.c_curso.getText().length()< 2){
+                throw new Mensagens ("Curso deve conter ao menos 2 caracteres.");
+            } else {
+                curso = this.c_curso.getText();
+            }
+            
+            if (this.c_fase.getText().length)
+        }
     }//GEN-LAST:event_c_cadastrarActionPerformed
 
     /**
@@ -189,9 +217,9 @@ public class CadastroAluno extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
     private javax.swing.JTextPane jTextPane4;
+    private javax.swing.JTextPane textpane_nome;
     // End of variables declaration//GEN-END:variables
 }
