@@ -27,7 +27,7 @@ public class GerenciarAluno extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        table = new javax.swing.JTable();
+        g_table = new javax.swing.JTable();
         g_nome = new javax.swing.JLabel();
         g_idade = new javax.swing.JLabel();
         g_curso = new javax.swing.JLabel();
@@ -46,7 +46,7 @@ public class GerenciarAluno extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        table.setModel(new javax.swing.table.DefaultTableModel(
+        g_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -71,7 +71,7 @@ public class GerenciarAluno extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(table);
+        jScrollPane1.setViewportView(g_table);
 
         g_nome.setText("Nome:");
 
@@ -225,6 +225,7 @@ public class GerenciarAluno extends javax.swing.JFrame {
     private javax.swing.JLabel g_fase;
     private javax.swing.JLabel g_idade;
     private javax.swing.JLabel g_nome;
+    private javax.swing.JTable g_table;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -234,6 +235,5 @@ public class GerenciarAluno extends javax.swing.JFrame {
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
     private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables
 }
