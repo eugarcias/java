@@ -1,15 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package View;
 
 import Model.Aluno;
-
-/**
- *
- * @author conta
- */
+import javax.swing.JButton;
 public class CadastroAluno extends javax.swing.JFrame {
 
     private final Aluno objaluno;
@@ -170,9 +163,24 @@ public class CadastroAluno extends javax.swing.JFrame {
             if (this.c_fase.getText().length()<=0) {
                 throw new Mensagens ("Fase deve ser número e maior que zero.");
             } else {
-                fase = Integer.parseInt(this.c_fase.geText());
+                fase = Integer.parseInt(this.c_fase.getText());
             }
+            
+            if (this.objaluno.InsertAlunoBD(curso, fase, nome, idade)){
+                JOptionPane.showMessageDialog(rootPane,"Aluno Cadastrado com Sucesso!");
+                
+                this.c_nome.setText("");
+                this.c_idade.setText("");
+                this.c_curso.setText("");
+                this.c_fase.setText("");
+                }
+            System.out.println(this.controlador.getMinhaLista().toString());
+        } catch (Mensagens erro){
+            JOptionPane.showMessageDialog(null, erro.getMessage());
+        } catch (NumberFormatException erro2){
+            JOptionPane.showwMessageDialog(null, "Informe seu número.");
         }
+        
     }//GEN-LAST:event_c_cadastrarActionPerformed
 
     /**
