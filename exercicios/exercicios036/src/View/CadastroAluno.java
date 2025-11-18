@@ -167,7 +167,11 @@ public class CadastroAluno extends javax.swing.JFrame {
                 curso = this.c_curso.getText();
             }
             
-            if (this.c_fase.getText().length)
+            if (this.c_fase.getText().length()<=0) {
+                throw new Mensagens ("Fase deve ser número e maior que zero.");
+            } else {
+                fase = Integer.parseInt(this.c_fase.geText());
+            }
         }
     }//GEN-LAST:event_c_cadastrarActionPerformed
 
