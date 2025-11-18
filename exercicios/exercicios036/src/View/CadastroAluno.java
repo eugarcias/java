@@ -3,13 +3,16 @@ package View;
 
 import Model.Aluno;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 public class CadastroAluno extends javax.swing.JFrame {
 
+    private final ControleAluno controlador;
     private final Aluno objaluno;
     
     public CadastroAluno() {
         initComponents();
         this.objaluno = new Aluno();
+        this.controlador = new ControleAluno();
     }
 
     /**
@@ -28,11 +31,11 @@ public class CadastroAluno extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         textpane_nome = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        textpane_idade = new javax.swing.JTextPane();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        textpane_curso = new javax.swing.JTextPane();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        textpane_fase = new javax.swing.JTextPane();
         c_cancelar = new javax.swing.JButton();
         c_cadastrar = new javax.swing.JButton();
 
@@ -48,11 +51,11 @@ public class CadastroAluno extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(textpane_nome);
 
-        jScrollPane2.setViewportView(jTextPane2);
+        jScrollPane2.setViewportView(textpane_idade);
 
-        jScrollPane3.setViewportView(jTextPane3);
+        jScrollPane3.setViewportView(textpane_curso);
 
-        jScrollPane4.setViewportView(jTextPane4);
+        jScrollPane4.setViewportView(textpane_fase);
 
         c_cancelar.setText("Cancelar");
         c_cancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -143,42 +146,42 @@ public class CadastroAluno extends javax.swing.JFrame {
             String curso = "";
             int fase = 0;
             
-            if (this.c_nome.getText().length()< 2){
+            if (this.textpane_nome.getText().length()< 2){
                 throw new Mensagens("Nome deve conter ao menos 2 caracteres"); 
             } else {
-                nome = this.c_nome.getText();
+                nome = this.textpane_nome.getText();
             }
-            if (this.c_idade.getText().length()<=0){
+            if (this.textpane_idade.getText().length()<=0){
                 throw new Mensagens ("Idade deve ser número e maior que zero.");
             } else {
-                idade = Integer.parseInt(this.c_idade.getText());
+                idade = Integer.parseInt(this.textpane_idade.getText());
             }
             
-            if (this.c_curso.getText().length()< 2){
+            if (this.textpane_curso.getText().length()< 2){
                 throw new Mensagens ("Curso deve conter ao menos 2 caracteres.");
             } else {
-                curso = this.c_curso.getText();
+                curso = this.textpane_curso.getText();
             }
             
-            if (this.c_fase.getText().length()<=0) {
+            if (this.textpane_fase.getText().length()<=0) {
                 throw new Mensagens ("Fase deve ser número e maior que zero.");
             } else {
-                fase = Integer.parseInt(this.c_fase.getText());
+                fase = Integer.parseInt(this.textpane_fase.getText());
             }
             
             if (this.objaluno.InsertAlunoBD(curso, fase, nome, idade)){
                 JOptionPane.showMessageDialog(rootPane,"Aluno Cadastrado com Sucesso!");
                 
-                this.c_nome.setText("");
-                this.c_idade.setText("");
-                this.c_curso.setText("");
-                this.c_fase.setText("");
+                this.textpane_nome.setText("");
+                this.textpane_idade.setText("");
+                this.textpane_curso.setText("");
+                this.textpane_fase.setText("");
                 }
             System.out.println(this.controlador.getMinhaLista().toString());
         } catch (Mensagens erro){
             JOptionPane.showMessageDialog(null, erro.getMessage());
         } catch (NumberFormatException erro2){
-            JOptionPane.showwMessageDialog(null, "Informe seu número.");
+            JOptionPane.showMessageDialog(null, "Informe seu número.");
         }
         
     }//GEN-LAST:event_c_cadastrarActionPerformed
@@ -229,9 +232,9 @@ public class CadastroAluno extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
+    private javax.swing.JTextPane textpane_curso;
+    private javax.swing.JTextPane textpane_fase;
+    private javax.swing.JTextPane textpane_idade;
     private javax.swing.JTextPane textpane_nome;
     // End of variables declaration//GEN-END:variables
 }

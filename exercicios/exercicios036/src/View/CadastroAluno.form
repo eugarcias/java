@@ -135,7 +135,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane2">
+        <Component class="javax.swing.JTextPane" name="textpane_idade">
         </Component>
       </SubComponents>
     </Container>
@@ -146,7 +146,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane3">
+        <Component class="javax.swing.JTextPane" name="textpane_curso">
         </Component>
       </SubComponents>
     </Container>
@@ -157,7 +157,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane4">
+        <Component class="javax.swing.JTextPane" name="textpane_fase">
         </Component>
       </SubComponents>
     </Container>
