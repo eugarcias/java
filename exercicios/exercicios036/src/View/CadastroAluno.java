@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package View;
 
-/**
- *
- * @author conta
- */
+import Model.Aluno;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
 public class CadastroAluno extends javax.swing.JFrame {
 
-    /**
-     * Creates new form CadastroAluno
-     */
+    private final ControleAluno controlador;
+    private final Aluno objaluno;
+    
     public CadastroAluno() {
         initComponents();
+        this.objaluno = new Aluno();
+        this.controlador = new ControleAluno();
     }
 
     /**
@@ -31,13 +29,13 @@ public class CadastroAluno extends javax.swing.JFrame {
         c_curso = new javax.swing.JLabel();
         c_fase = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        textpane_nome = new javax.swing.JTextPane();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        textpane_idade = new javax.swing.JTextPane();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        textpane_curso = new javax.swing.JTextPane();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        textpane_fase = new javax.swing.JTextPane();
         c_cancelar = new javax.swing.JButton();
         c_cadastrar = new javax.swing.JButton();
 
@@ -51,13 +49,13 @@ public class CadastroAluno extends javax.swing.JFrame {
 
         c_fase.setText("Fase:");
 
-        jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setViewportView(textpane_nome);
 
-        jScrollPane2.setViewportView(jTextPane2);
+        jScrollPane2.setViewportView(textpane_idade);
 
-        jScrollPane3.setViewportView(jTextPane3);
+        jScrollPane3.setViewportView(textpane_curso);
 
-        jScrollPane4.setViewportView(jTextPane4);
+        jScrollPane4.setViewportView(textpane_fase);
 
         c_cancelar.setText("Cancelar");
         c_cancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +138,52 @@ public class CadastroAluno extends javax.swing.JFrame {
     }//GEN-LAST:event_c_cancelarActionPerformed
 
     private void c_cadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_cadastrarActionPerformed
-        // TODO add your handling code here:
+        // Ativar o botão Cadastrar
+        
+        try {
+            String nome = "";
+            int idade = 0;
+            String curso = "";
+            int fase = 0;
+            
+            if (this.textpane_nome.getText().length()< 2){
+                throw new Mensagens("Nome deve conter ao menos 2 caracteres"); 
+            } else {
+                nome = this.textpane_nome.getText();
+            }
+            if (this.textpane_idade.getText().length()<=0){
+                throw new Mensagens ("Idade deve ser número e maior que zero.");
+            } else {
+                idade = Integer.parseInt(this.textpane_idade.getText());
+            }
+            
+            if (this.textpane_curso.getText().length()< 2){
+                throw new Mensagens ("Curso deve conter ao menos 2 caracteres.");
+            } else {
+                curso = this.textpane_curso.getText();
+            }
+            
+            if (this.textpane_fase.getText().length()<=0) {
+                throw new Mensagens ("Fase deve ser número e maior que zero.");
+            } else {
+                fase = Integer.parseInt(this.textpane_fase.getText());
+            }
+            
+            if (this.objaluno.InsertAlunoBD(curso, fase, nome, idade)){
+                JOptionPane.showMessageDialog(rootPane,"Aluno Cadastrado com Sucesso!");
+                
+                this.textpane_nome.setText("");
+                this.textpane_idade.setText("");
+                this.textpane_curso.setText("");
+                this.textpane_fase.setText("");
+                }
+            System.out.println(this.controlador.getMinhaLista().toString());
+        } catch (Mensagens erro){
+            JOptionPane.showMessageDialog(null, erro.getMessage());
+        } catch (NumberFormatException erro2){
+            JOptionPane.showMessageDialog(null, "Informe seu número.");
+        }
+        
     }//GEN-LAST:event_c_cadastrarActionPerformed
 
     /**
@@ -189,9 +232,9 @@ public class CadastroAluno extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
+    private javax.swing.JTextPane textpane_curso;
+    private javax.swing.JTextPane textpane_fase;
+    private javax.swing.JTextPane textpane_idade;
+    private javax.swing.JTextPane textpane_nome;
     // End of variables declaration//GEN-END:variables
 }
